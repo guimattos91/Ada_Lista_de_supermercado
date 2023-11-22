@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de supermercado</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100;0,200;0,400;0,500;1,100&family=Raleway:wght@100;400;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container_total">
+        <header class="header">
+            <h1 class="header_tittle">Lista de supermercado</h1>
+        </header>
+
+        <main class="main">
+            <section class="container_form">
+                <form action="#">
+                    <label for="input"></label>
+                    <input id="input" class="container_input" type="text">
+                    <button id="add" class="container_button" onclick="newTask()">Adicionar novo item</button>
+                </form>
+
+                <section class="container_input_search">
+                    <form class="container_search__form">
+                        <label class="container_search__label" for="searchInput">Buscar Item por ID</label>
+                        <input type="number" class="container_input" id="idInput" placeholder="Digite o ID">
+                        <button class="container_button" onclick="buscarItemPorId()">Buscar</button>
+                        <p class="container_search__p" id="itemEncontrado"></p>
+                    </form>
+                </section>
+
+                <section class="container_search">
+                    <form action="#" class="container_search__form">
+                        <label for="searchInput">Escolha seu produto</label>
+                        <select name="searchItems" id="select-item" class="container_select">
+                        </select>
+                    </form>
+                    <p id="selected-product" class="container_search__p">Nenhum produto selecionado</p>
+                </section>
+
+
+
+            </section>
+
+
+
+            <section class="container_list">
+                <ul class="container_list__ul" id="listaSupermercado">
+                    <!-- <li class="container_list__li">
+                        <span class="task done">Tarefa 1</span>
+
+                        <div class="buttons">
+                            <button class="done-btn"><img class="icone" src="./src/inserts/sucesso.png"
+                                    alt="icone do botao"></button>
+                            <button class="edit-btn"><img class="icone" src="./src/inserts/editar.png"
+                                    alt="icone do botao"></button>
+                            <button class="remove-btn"><img class="icone" src="./src/inserts/remover.png"
+                                    alt="icone do botao"></button>
+                        </div>
+                    </li>
+
+
+
+                    <li class="container_list__li">
+                        <span class="task ">Tarefa 1</span>
+
+                        <div class="buttons">
+                            <button class="done-btn" onclick="done()"><img class="icone" src="./src/inserts/sucesso.png"
+                                    alt="icone do botao"></button>
+                            <button class="edit-btn"><img class="icone" src="./src/inserts/editar.png"
+                                    alt="icone do botao"></button>
+                            <button class="remove-btn"><img class="icone" src="./src/inserts/remover.png"
+                                    alt="icone do botao"></button>
+                        </div>
+                    </li>
+
+                    <li class="container_list__li">
+                        <span class="task ">Tarefa 1</span>
+
+                        <div class="buttons">
+                            <button class="done-btn" onclick="done()"><img class="icone" src="./src/inserts/sucesso.png"
+                                    alt="icone do botao"></button>
+                            <button class="edit-btn"><img class="icone" src="./src/inserts/editar.png"
+                                    alt="icone do botao"></button>
+                            <button class="remove-btn"><img class="icone" src="./src/inserts/remover.png"
+                                    alt="icone do botao"></button>
+                        </div>
+                    </li> -->
+
+                </ul>
+            </section>
+
+
+
+
+        </main>
+
+    </div>
+
+
+    <footer class="footer">dev</footer>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
