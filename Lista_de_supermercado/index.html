@@ -23,14 +23,14 @@
         <main class="main">
             <section class="container_form">
                 <form action="#">
-                    <label for="input"></label>
+                    <label for="add"></label>
                     <input id="input" class="container_input" type="text">
                     <button id="add" class="container_button" onclick="newTask()">Adicionar novo item</button>
                 </form>
 
                 <section class="container_input_search">
-                    <form class="container_search__form">
-                        <label class="container_search__label" for="searchInput">Buscar Item por ID</label>
+                    <form action="#" class="container_search__form">
+                        <label class="container_search__label" for="idInput">Buscar Item por ID</label>
                         <input type="number" class="container_input" id="idInput" placeholder="Digite o ID">
                         <button class="container_button" onclick="buscarItemPorId()">Buscar</button>
                         <p class="container_search__p" id="itemEncontrado"></p>
@@ -39,7 +39,7 @@
 
                 <section class="container_search">
                     <form action="#" class="container_search__form">
-                        <label for="searchInput">Escolha seu produto</label>
+                        <label for="select-item">Escolha seu produto</label>
                         <select name="searchItems" id="select-item" class="container_select">
                         </select>
                     </form>
@@ -67,32 +67,7 @@
                         </div>
                     </li>
 
-
-
-                    <li class="container_list__li">
-                        <span class="task ">Tarefa 1</span>
-
-                        <div class="buttons">
-                            <button class="done-btn" onclick="done()"><img class="icone" src="./src/inserts/sucesso.png"
-                                    alt="icone do botao"></button>
-                            <button class="edit-btn"><img class="icone" src="./src/inserts/editar.png"
-                                    alt="icone do botao"></button>
-                            <button class="remove-btn"><img class="icone" src="./src/inserts/remover.png"
-                                    alt="icone do botao"></button>
-                        </div>
-                    </li>
-
-                    <li class="container_list__li">
-                        <span class="task ">Tarefa 1</span>
-
-                        <div class="buttons">
-                            <button class="done-btn" onclick="done()"><img class="icone" src="./src/inserts/sucesso.png"
-                                    alt="icone do botao"></button>
-                            <button class="edit-btn"><img class="icone" src="./src/inserts/editar.png"
-                                    alt="icone do botao"></button>
-                            <button class="remove-btn"><img class="icone" src="./src/inserts/remover.png"
-                                    alt="icone do botao"></button>
-                        </div>
+                   
                     </li> -->
 
                 </ul>
@@ -106,7 +81,7 @@
     </div>
 
 
-    <footer class="footer">dev</footer>
+    <!-- <footer class="footer"><a href="https://github.com/BrunoAneves">BrunoAneves</a></footer> -->
     <script src="./scripts/script.js"></script>
 </body>
 

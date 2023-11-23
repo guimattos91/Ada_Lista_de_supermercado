@@ -192,6 +192,14 @@
 }
 
 .footer {
+    display: flex;
+    margin-top: 10px;
+}
 
-    background-color: #59C39B;
+.footer a {
+
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    color: #4e4e4e;
+    margin: 0 auto;
 }

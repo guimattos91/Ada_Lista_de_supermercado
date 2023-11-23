@@ -137,7 +137,13 @@ function showListOfProducts() {
         const selectedProductParagraph = document.getElementById('selected-product');
 
         if (selectedValue !== "") {
-            selectedProductParagraph.textContent = `Produto Selecionado: ${array[selectedValue - 1].name}`;
+            const selectedProduct = array[selectedValue - 1];
+
+            if (selectedProduct && selectedProduct.name) {
+                selectedProductParagraph.textContent = `Produto Selecionado: ${selectedProduct.name}`;
+            } else {
+                selectedProductParagraph.textContent = "Produto selecionado inválido";
+            }
         } else {
             selectedProductParagraph.textContent = "Nenhum produto selecionado";
         }
